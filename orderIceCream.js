@@ -24,7 +24,7 @@
  */
  
 // change the values of `flavor`, `topping`, and `vessel` to test your code
-const flavor = "vanilla";
+const flavor = "blueberry";
 const topping = "sprinkles";
 const vessel = "wafer cone";
 
@@ -34,13 +34,9 @@ let vesselOkay = vessel === "sugar cone" || vessel === "wafer cone";
 
 
 // your code goes here
-if (flavorOkay){
+if (flavorOkay && toppingOkay && vesselOkay ){
   
-  	if(toppingOkay){
-  		if(vesselOkay){
-        	console.log("Great choice! Your ice cream is at the next window.");
-        }    
-    }
+    console.log("Great choice! Your ice cream is at the next window.");
   
 }else{
 	console.log("Please check our menu and try again.");
