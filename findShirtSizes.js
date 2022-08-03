@@ -27,6 +27,8 @@ const shirtSleeve = 8.71;
 
 // your code goes here
 
+let size = ""; //added a size to store the size letters
+
 // Logical and Conditional expressions for "S" or small sizes
 let smallShirtWidthOkay = shirtWidth >= 18 && shirtWidth < 20 ; 
 let smallShirtLengthOkay = shirtLength >= 28 && shirtLength < 29;
@@ -71,17 +73,19 @@ let xxxlargeShirtOkay = xxxlargeShirtWidthOkay && xxxlargeShirtLengthOkay && xxx
 
 
 if(smallShirtOkay === true) {
-    console.log("S");
+    size = "S";
 } else if (mediumShirtOkay === true) {
-    console.log("M");
+    size = "M";
 } else if (largeShirtOkay === true) {
-    console.log("L");
+    size = "L";
 } else if (xlargeShirtOkay === true) {
-    console.log("XL");
+    size = "XL";
 } else if (xxlargeShirtOkay === true) {
-    console.log("2XL");
+    size = "2XL";
 } else if (xxxlargeShirtOkay === true) {
-    console.log("3XL");
+    size = "3XL";
 } else {
-    console.log("NA");
+    size = "NA";
 }
+
+console.log(size);
