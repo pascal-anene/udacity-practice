@@ -70,3 +70,18 @@ let xxxlargeShirtSleeveOkay = shirtSleeve >= 10.13;
 let xxxlargeShirtOkay = xxxlargeShirtWidthOkay && xxxlargeShirtLengthOkay && xxxlargeShirtSleeveOkay;
 
 
+if(smallShirtOkay === true) {
+    console.log("S");
+} else if (mediumShirtOkay === true) {
+    console.log("M");
+} else if (largeShirtOkay === true) {
+    console.log("L");
+} else if (xlargeShirtOkay === true) {
+    console.log("XL");
+} else if (xxlargeShirtOkay === true) {
+    console.log("2XL");
+} else if (xxxlargeShirtOkay === true) {
+    console.log("3XL");
+} else {
+    console.log("NA");
+}
