@@ -12,19 +12,21 @@
  */
  
 // change the values of `balance`, `checkBalance`, and `isActive` to test your code
-const balance = -325.00;
+const balance = 325.00;
 const checkBalance = true;
 const isActive = true;
 
 // your code goes here
 // Control Flow for Checking Account Balance 
-if(checkBalance) {
+// Only begin checking if the customer wishes to check account i.e checkBalance is true
+if(checkBalance === true) {
 	
+    //Check for different cases when account is active and balance is: >, <, ==, etc
 	if (isActive === true && balance > 0) {
     	console.log("Your balance is $" + balance.toFixed(2) + ".");
     } else if (isActive === false) {
       	console.log("Your account is no longer active.");
-    } else if (balance === 0) {
+    } else if (isActive === true && balance === 0) {
       	console.log("Your account is empty");
     }else {
     	console.log("Your account is negative. Please contact bank");
