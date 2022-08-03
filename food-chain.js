@@ -35,7 +35,13 @@ let category;
 */
 
 // Control Flow for Organism Classification 
-category = eatsPlants  ? "herbivore" : eatsAnimals ? "carnivore" : eatsAnimals && eatsPlants ? "omnivore" : undefined ;
+category = eatsPlants  
+                ? "herbivore" 
+                : eatsAnimals 
+                        ? "carnivore" 
+                        : eatsAnimals && eatsPlants 
+                                ? "omnivore" 
+                                : undefined ;
 
 
 
