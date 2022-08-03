@@ -13,7 +13,7 @@
  */
  
 // change the value of `education` to test your code
-const education = "no high school diploma";
+const education = "no education";
 
 // set the value of this based on a person's education
 let salary = 0;
@@ -44,11 +44,14 @@ switch(education) {
     case "a Professional degree":
         salary = 89960;
         break;
-    case "":
+    case "a Doctoral degree":
         salary = 84396;
         break;
-    default:
-        salary = undefined;
+    
+    // The default case is commented out; I realized it is better to not have a default case for. 
+    // Our initial assignment of salary to 0 works well in the flow, especially because of the .toLocaleString() method in the output
+    // default:
+    //     salary = undefined;
 
 }
 
