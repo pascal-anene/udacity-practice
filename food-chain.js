@@ -21,19 +21,22 @@
  
 // change the values of `eatsPlants` and `eatsAnimals` to test your code
 const eatsPlants = false;
-const eatsAnimals = true;
+const eatsAnimals = false;
 let category;
 
-// your code goes here
-if(eatsPlants === true) {
-    category = "herbivore";
-} else if(eatsAnimals === true) {
-    category = "carnivore";
-} else if(eatsPlants === true && eatsAnimals === true){
-    category = "omnivore"
-} else {
-    category = undefined;
-}
+
+/*
+    Refactoring Chunks for Ternary Operator:
+
+     eatsPlants ? "herbivore" : undefined;
+     eatsAnimals ? "carnivore" : undefined;
+     eatsAnimals && eatsPlants ? "omnivore" : undefined;
+
+*/
+
+// Control Flow for Organism Classification 
+category = eatsPlants  ? "herbivore" : eatsAnimals ? "carnivore" : eatsAnimals && eatsPlants ? "omnivore" : undefined ;
+
 
 
 console.log(category);
