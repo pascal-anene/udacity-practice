@@ -40,3 +40,10 @@ category = eatsPlants  ? "herbivore" : eatsAnimals ? "carnivore" : eatsAnimals &
 
 
 console.log(category);
+
+/**
+ * Another Possible Solution is:
+ * category = eatsPlants ? (eatsAnimals ? "omnivore" : "herbivore") : (eatsAnimals ? "carnivore" : "undefined")
+
+    Notice the nesting logic eliminates the need for the logical && operator
+ */
