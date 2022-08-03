@@ -28,11 +28,16 @@ const flavor = "vanilla";
 const topping = "sprinkles";
 const vessel = "wafer cone";
 
+let flavorOkay = flavor === "vanilla" || flavor === "chocolate";
+let toppingOkay = topping === "sprinkles" || topping === "peanuts";
+let vesselOkay = vessel === "sugar cone" || vessel === "wafer cone";
+
+
 // your code goes here
-if (flavor === "vanilla" || flavor === "chocolate"){
+if (flavorOkay){
   
-  	if(topping === "sprinkles" || topping === "peanuts"){
-  		if(vessel === "sugar cone" || vessel === "wafer cone"){
+  	if(toppingOkay){
+  		if(vesselOkay){
         	console.log("Great choice! Your ice cream is at the next window.");
         }    
     }
