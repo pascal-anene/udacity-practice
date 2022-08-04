@@ -68,7 +68,7 @@ while (countTime >= 0){
 
     }
 
-    countTime--;
+    --countTime;
 
 }
 
