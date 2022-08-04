@@ -1,0 +1,10 @@
+/**
+ * Fix the Error in the Loop
+ * The for loop below has an error. Fix it!
+ */
+
+ for (let k = 12; k < 21; k++) {
+    console.log(k);
+  }
+
+  
