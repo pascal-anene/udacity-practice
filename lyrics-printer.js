@@ -44,14 +44,26 @@ while (num > 0) {
     // don't forget to check pluralization on the last line!
     // decrement num
 
+    // This will account for the last iteration with occurences of: bottle, bottle, bottleS
     if (num === 1){
 
         finalMessage = `${num} ${messageFirstPartSingular} ${num} ${messageSecondPartSingular} ${num - 1} ${messageThirdPartPlural}`;
         console.log(finalMessage);
 
-    }else{
-        finalMessage = `${num} ${messageFirstPartPlural} ${num} ${messageSecondPartPlural} ${num - 1} ${messageThirdPartPlural}`
+    
+    }// This will account for the second to last iteration with occurences of: bottleS, bottleS, bottle
+    else if(num === 2){
+
+        finalMessage = `${num} ${messageFirstPartPlural} ${num} ${messageSecondPartPlural} ${num - 1} ${messageThirdPartSingular}`;
         console.log(finalMessage);
+
+
+    }// This will account for iteration with normal occurences: bottleS, bottleS, bottleS
+    else{
+
+        finalMessage = `${num} ${messageFirstPartPlural} ${num} ${messageSecondPartPlural} ${num - 1} ${messageThirdPartPlural}`;
+        console.log(finalMessage);
+
     }
 
     num--;
