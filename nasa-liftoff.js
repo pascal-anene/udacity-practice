@@ -21,59 +21,55 @@ let taskMessage = "";
 
 while (countTime >= 0){
 
-    // first we try an if___else approach 
+    // first we try an if___else approach (check commit on Github)
+    //Now we refactor to Swith Statement
 
-    // Prints out message for T-50
-    if(countTime === 50){
+    switch(countTime){
 
-        taskMessage = "Orbiter transfers from ground to internal power";
-        console.log(taskMessage);
+        case 50:
+            taskMessage = "Orbiter transfers from ground to internal power";
+            console.log(taskMessage);
+            break;
+        
+        case 31:
+            taskMessage = "Ground launch sequencer is go for auto sequence start";
+            console.log(taskMessage);
+            break;
 
-    // Prints out message for T-31
-    } else if(countTime === 31){
+        case 16:
+            taskMessage = "Activate launch pad sound suppression system";
+            console.log(taskMessage);
+            break;
 
-        taskMessage = "Ground launch sequencer is go for auto sequence start";
-        console.log(taskMessage);
+        case 10:
+            taskMessage = "Activate main engine hydrogen burnoff system";
+            console.log(taskMessage);
+            break;
 
-    // Prints out message for T-16
-    } else if(countTime === 16){
+        case 6:
+            taskMessage = "Main engine start";
+            console.log(taskMessage);
+            break;
 
-        taskMessage = "Activate launch pad sound suppression system";
-        console.log(taskMessage);
+        case 1:
+            taskMessage = `T-${countTime} second`;
+            console.log(taskMessage);
+            break;
 
-    // Prints out message for T-10
-    } else if(countTime === 10){
+        case 0:
+            taskMessage = "Solid rocket booster ignition and liftoff!";
+            console.log(taskMessage);
+            break;
 
-        taskMessage = "Activate main engine hydrogen burnoff system";
-        console.log(taskMessage);
+        default:
+            taskMessage = `T-${countTime} seconds`;
+            console.log(taskMessage);
 
-    // Prints out message for T-6
-    } else if(countTime === 6){
-
-        taskMessage = "Main engine start";
-        console.log(taskMessage);
-
-    // Prints out message for T-1, to handle singular "second" (UX/UI best practice)
-    } else if(countTime === 1){
-
-        taskMessage = `T-${countTime} second`;
-        console.log(taskMessage);
-
-    // Prints out message for T-0
-    } else if (countTime === 0){
-
-        taskMessage = "Solid rocket booster ignition and liftoff!";
-        console.log(taskMessage);
-
-    // Prints out message for other time counts
-    } else {
-
-        taskMessage = `T-${countTime} seconds`;
-        console.log(taskMessage);
 
     }
 
     countTime--;
+
 }
 
 
