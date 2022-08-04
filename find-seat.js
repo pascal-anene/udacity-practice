@@ -26,7 +26,7 @@ for (let seatRows = 0; seatRows <= 25; seatRows++) {
     //Inner Loop to iterate through individual seats
     for(let seatColumn = 0; seatColumn <= 99; seatColumn++ ){
 
-        console.log(seatRows, seatColumn);
+        console.log(seatRows + "-" + seatColumn);
 
     }
 
