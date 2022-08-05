@@ -10,13 +10,30 @@
  */
 
 // your code goes here
-function laugh(){
 
-    const laughter = "hahahahahahahahahaha!"
+// function declaration with parameter
+function laugh(num){
 
-    return laughter;
+    // variable to build the number of ha's
+    let laughter = "";
+
+    //variable to hold the final output
+    let finalSound ="";
+
+    for(let i = 1; i <= num; i++){
+
+        laughter += "ha";
+
+    }
+
+    finalSound = laughter + "!";
+
+    return finalSound;
 
 }
 
-// test your code by logging out the returned value
-console.log(laugh());
+// test code
+console.log(laugh(0)) 
+console.log(laugh(3)) 
+console.log(laugh(4)) 
+console.log(laugh(8)) 
