@@ -12,7 +12,7 @@
 // your code goes here
 function laugh(){
 
-    let laughter = "hahahahahahahahahaha!"
+    const laughter = "hahahahahahahahahaha!"
 
     return laughter;
 
