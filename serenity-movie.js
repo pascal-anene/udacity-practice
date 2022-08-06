@@ -22,19 +22,19 @@
 
 // your code goes here
 
-//Array declaration using literal syntax 
 
- const crew = [
-            "Mal",
-            "Zoe",
-            "Wash",
-            "Inara",
-            "Jayne",
-            "Kaylee"]
+//Array declaration using literal syntax 
+ const crewNames = [
+                "Mal",
+                "Zoe",
+                "Wash",
+                "Inara",
+                "Jayne",
+                "Kaylee"];
+
 
 //Array declaration using constructor syntax 
-
-const crewSame = new Array(
+const crewNamesSame = new Array(
                 "Mal",
                 "Zoe",
                 "Wash",
@@ -43,3 +43,48 @@ const crewSame = new Array(
                 "Kaylee"
 );
 
+// Print all names from array, crewNames, created with literal syntax 
+for (let index = 0; index < crewNames.length; index++){
+    console.log(crewNames[index] + "\n\n"); // add new line to create spacing :)
+}
+
+// Print all names from array, crewNamesSame, created with constructor
+for(let index = 0; index < crewNamesSame.length; index++){
+    console.log(crewNamesSame[index] + "\n\n");
+}
+
+/**
+ * Repeating the same steps above for the roles of each of the actors
+ */
+
+//Array declaration using literal syntax 
+ const crewRoles = [
+            "captain",
+            "second",
+            "pilot",
+            "companion",
+            "mercenary",
+            "mechanic"];
+
+
+//Array declaration using constructor syntax 
+const crewRoleSame = new Array(
+            "captain",
+            "second",
+            "pilot",
+            "companion",
+            "mercenary",
+            "mechanic"
+);
+
+
+
+// Print all names from array, crewRoles, created with literal syntax 
+for (let index = 0; index < crewRoles.length; index++){
+    console.log(crewRoles[index] + "\n\n"); // add new line to create spacing :)
+}
+
+// Print all names from array, crewRolesSame, created with constructor
+for(let index = 0; index < crewRoleSame.length; index++){
+    console.log(crewRoleSame[index] + "\n\n");
+}
