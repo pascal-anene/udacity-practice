@@ -29,19 +29,28 @@
 ];
 
 
-// Placeholder function for the map() arguement
 
-function placeholder(element){
+
+// function placeholder(element){
+
+//     element = Number((element + (0.15 * element)).toFixed(2)); 
+
+//     console.log(element);
+
+//     return element;
+   
+// }
+
+// Refactoring with anonymous function to map() 
+const totals = bills.map(function(element){
 
     element = Number((element + (0.15 * element)).toFixed(2)); 
 
-    console.log(element);
+    // console.log(element) for debugging
 
     return element;
    
-}
-
-const totals = bills.map(placeholder);
+});
 
 
 console.log(totals);
