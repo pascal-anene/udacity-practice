@@ -13,7 +13,10 @@
 // your code goes here
 
 //Declaration using an array literal syntax
-const udaciFamily = ["Julia","James","Pascal"];
+// const udaciFamily = ["Julia","James","Pascal"];
+
+//Declaration using an array constructor 
+const udaciFamily = new Array("Julia","James","Pascal");
 
 
 for(let index = 0; index < udaciFamily.length; index++){
