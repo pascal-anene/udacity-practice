@@ -45,12 +45,12 @@ const crewNamesSame = new Array(
 
 // Print all names from array, crewNames, created with literal syntax 
 for (let index = 0; index < crewNames.length; index++){
-    console.log(crewNames[index] + "\n\n"); // add new line to create spacing :)
+    // console.log(crewNames[index] + "\n\n"); // add new line to create spacing :)
 }
 
 // Print all names from array, crewNamesSame, created with constructor
 for(let index = 0; index < crewNamesSame.length; index++){
-    console.log(crewNamesSame[index] + "\n\n");
+    // console.log(crewNamesSame[index] + "\n\n");
 }
 
 /**
@@ -81,10 +81,39 @@ const crewRoleSame = new Array(
 
 // Print all names from array, crewRoles, created with literal syntax 
 for (let index = 0; index < crewRoles.length; index++){
-    console.log(crewRoles[index] + "\n\n"); // add new line to create spacing :)
+    // console.log(crewRoles[index] + "\n\n"); // add new line to create spacing :)
 }
 
 // Print all names from array, crewRolesSame, created with constructor
 for(let index = 0; index < crewRoleSame.length; index++){
-    console.log(crewRoleSame[index] + "\n\n");
+    // console.log(crewRoleSame[index] + "\n\n");
+}
+
+/**
+ * combining both crew role and name by using the variables directly
+ * 
+ */
+
+ const captain = "Mal";
+ const second = "Zoe";
+ const pilot = "Wash";
+ const companion = "Inara";
+ const mercenary = "Jayne";
+ const mechanic = "Kaylee";
+
+ const crew = [
+                captain,
+                second,
+                pilot,
+                companion,
+                mercenary,
+                mechanic
+              ];
+
+// Log or Print the Array
+ console.log(crew);
+
+//Print each value of the Array
+for(let index = 0; index < crew.length; index++){
+    console.log(crew[index]);
 }
