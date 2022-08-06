@@ -111,9 +111,31 @@ for(let index = 0; index < crewRoleSame.length; index++){
               ];
 
 // Log or Print the Array
- console.log(crew);
+ // console.log(crew);
 
 //Print each value of the Array
 for(let index = 0; index < crew.length; index++){
-    console.log(crew[index]);
+   // console.log(crew[index]);
 }
+
+
+/**
+ * Three new crew members joined the cast
+ * We add them to array, crew, using the push method
+ * * QUIZ REQUIREMENTS
+ * - Your code should have a variable `crew`
+ * - Your `crew` array should contain the Serenity\'s original crew and the three new crew members
+ * - Your code should use the `push()` method to add new members to the `crew` array
+ * - Print the array on the console at the end
+ * 
+ */
+
+ const doctor = "Simon";
+ const sister = "River";
+ const shepherd = "Book";
+ 
+ // adding
+ crew.push(doctor,sister,shepherd);
+
+ console.log(crew);
+
