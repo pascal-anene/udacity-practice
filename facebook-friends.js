@@ -15,26 +15,35 @@
 
 const facebookProfile = {
 
+    // Properties of the facebookProfile object
         name: "Pascal Anene",
         friends: 3500,
         messages: ["Every day is a blessing", "Happiness is choice!","I am healing!"],
 
+    // Methods of the facebookProfile object 
         postMessage: function(message){
             facebookProfile.messages.push(message);
         },
 
+        // the index is the starting point for deletion, the second argument is the number of items to delete
         deleteMessage: function(index){
             facebookProfile.messages.splice(index,1);
         },
 
         addFriend: function(){
-            // facebookProfile.friends++;
+            // facebookProfile.friends++; achieves the same as below
             facebookProfile.friends += 1;
         },
 
+        // what if the profile has no friends i.s friends < 0,
+        // then we would only want to delete if friends is greater than 0
         removeFriend: function(){
-            // facebookProfile.friends--;
-            facebookProfile.friends -= 1;
+            
+            if(facebookProfile.friends > 0){
+                 // facebookProfile.friends--; achieves the same as below
+                facebookProfile.friends -= 1;
+            }
+           
         }
 
 
