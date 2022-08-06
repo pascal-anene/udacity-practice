@@ -20,19 +20,33 @@ const test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4,
 // Write your code here
 
 // Function definition to be performed on each element in the forEach() operation
-function placeholder(element,index,array){
+// function placeholder(element,index,array){
+//     if(element % 3 === 0){
+//         array[index] += 100;
+//     }
+
+// }
+
+
+
+// Testing on the miniTest array
+miniTest.forEach(function (element,index,array){
     if(element % 3 === 0){
         array[index] += 100;
     }
+});
 
-}
 
-// Testing on the miniTest array
-miniTest.forEach(placeholder);
 console.log(miniTest);
 
 // Testing on the test array
-test.forEach(placeholder);
+test.forEach(function (element,index,array){
+    if(element % 3 === 0){
+        array[index] += 100;
+    }
+});
+
+
 console.log(test);
 
 
