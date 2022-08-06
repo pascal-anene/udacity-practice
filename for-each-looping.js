@@ -30,9 +30,9 @@ const test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4,
 
 
 // Testing on the miniTest array
-miniTest.forEach(function (element,index,array){
+miniTest.forEach(function (element,index){
     if(element % 3 === 0){
-        array[index] += 100;
+        miniTest[index] += 100;
     }
 });
 
@@ -40,9 +40,9 @@ miniTest.forEach(function (element,index,array){
 console.log(miniTest);
 
 // Testing on the test array
-test.forEach(function (element,index,array){
+test.forEach(function (element,index){
     if(element % 3 === 0){
-        array[index] += 100;
+        test[index] += 100;
     }
 });
 
