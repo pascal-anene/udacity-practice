@@ -6,7 +6,7 @@
 
 function average(...numbers) {
 
-    if(numbers[0] === 0){
+    if(numbers.length <= 0){
 
         return 0;
 
