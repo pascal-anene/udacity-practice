@@ -52,27 +52,56 @@
  *   - Do not alter any of the musicData content
  */
 
-const musicData = [
-    { artist: 'Adele', name: '25', sales: 1731000 },
-    { artist: 'Drake', name: 'Views', sales: 1608000 },
-    { artist: 'Beyonce', name: 'Lemonade', sales: 1554000 },
-    { artist: 'Chris Stapleton', name: 'Traveller', sales: 1085000 },
-    { artist: 'Pentatonix', name: 'A Pentatonix Christmas', sales: 904000 },
-    { artist: 'Original Broadway Cast Recording', 
-      name: 'Hamilton: An American Musical', sales: 820000 },
-    { artist: 'Twenty One Pilots', name: 'Blurryface', sales: 738000 },
-    { artist: 'Prince', name: 'The Very Best of Prince', sales: 668000 },
-    { artist: 'Rihanna', name: 'Anti', sales: 603000 },
-    { artist: 'Justin Bieber', name: 'Purpose', sales: 554000 }
-];
+// const musicData = [
+//     { artist: 'Adele', name: '25', sales: 1731000 },
+//     { artist: 'Drake', name: 'Views', sales: 1608000 },
+//     { artist: 'Beyonce', name: 'Lemonade', sales: 1554000 },
+//     { artist: 'Chris Stapleton', name: 'Traveller', sales: 1085000 },
+//     { artist: 'Pentatonix', name: 'A Pentatonix Christmas', sales: 904000 },
+//     { artist: 'Original Broadway Cast Recording', 
+//       name: 'Hamilton: An American Musical', sales: 820000 },
+//     { artist: 'Twenty One Pilots', name: 'Blurryface', sales: 738000 },
+//     { artist: 'Prince', name: 'The Very Best of Prince', sales: 668000 },
+//     { artist: 'Rihanna', name: 'Anti', sales: 603000 },
+//     { artist: 'Justin Bieber', name: 'Purpose', sales: 554000 }
+// ];
 
-const results = musicData.filter(function(item){
-    if( (item.name.length >= 10) && (item.name.length <= 25)){
-        return item;
+// const results = musicData.filter(function(item){
+//     if( (item.name.length >= 10) && (item.name.length <= 25)){
+//         return item;
+//     }
+// });
+
+
+
+// console.log(results);
+
+/*
+
+Declare a function named `expandArray()` that:
+
+* Takes no arguments
+* Contains a single local variable, `myArray`, which points to [1, 1, 1]
+* Returns an anonymous function that directly modifies `myArray` by
+  appending another `1` into it
+* The returned function then returns the value of `myArray`
+
+*/
+
+
+
+function expandArray() {
+
+    const myArray = [1,1,1];
+
+    return function(){
+        myArray.push(1);
+
+        return myArray;
     }
-});
 
+}
 
+const results = expandArray();
 
-console.log(results);
-
+console.log(results());
