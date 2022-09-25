@@ -112,9 +112,23 @@ Declare a function named `expandArray()` that:
  */
 
 // convert to an arrow function
-const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(square => square * square);
+
+// const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(square => square * square);
+// console.log(...squares);
 
 
+/**
+ * TESTING CODE PERFORMANCE 
+ */
 
-console.log(...squares);
 
+const startingTime = performance.now();
+
+for (let i = 1; i <= 100; i++) { 
+  for (let j = 1; j <= 100; j++) {
+    console.log('i and j are ', i, j);
+  }
+}
+
+const endingTime = performance.now();
+console.log('This code took ' + (endingTime - startingTime) + ' milliseconds.');
